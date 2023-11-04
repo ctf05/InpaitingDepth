@@ -6,9 +6,3 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-models/
-out0/
-out1/
-out2/
-out3/
-outputs/

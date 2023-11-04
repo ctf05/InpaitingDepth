@@ -196,7 +196,7 @@ def makeReel(base_path, video_paths, texts, genAudio, video_duration):
 
     # Step 4: Add Audio to Video
     audio_clips = []
-    max_duration = 5.6  # Maximum duration in seconds
+    max_duration = video_duration - .2  # Maximum duration in seconds
 
     for i, audio in enumerate(selected_audio_files):
         audio_clip = AudioFileClip(audio)
@@ -241,5 +241,3 @@ if useThis:
                 if texts[i][-1] == "." or texts[i][-1] == ",":
                     texts[i] = texts[i][:-1]
 
-
-    makeReel(subdir_path, texts, False, 9)
